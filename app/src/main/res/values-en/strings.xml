@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Dual Bolus</string>
     <string name="ntv_hidratos">0.0 gr</string>
-    <string name="tv_hidratos">Carbs</string>
+    <string name="tv_hidratos">  Carbs</string>
     <string name="ntv_grasas">0.0 gr</string>
-    <string name="tv_grasas">Fats</string>
+    <string name="tv_grasas">"    Fats"</string>
     <string name="ntv_proteinas">0.0 gr</string>
     <string name="tv_proteinas">Protein</string>
     <string name="tv_introvalores"><![CDATA[Enter values ->]]></string>
@@ -11,7 +11,7 @@
 
     <string name="info_texto">1.-Select the nutrient...\n\n2.-Slide your finger on the gray box to
         varying amounts of nutrients. \n\n3.-The bottom shows the bolo dual configuration\n\nIf you
-        want to enter a specific numeric value pres Enter values->\n\nIf you want to see the graph
+        want to enter a specific numeric value pres \'Enter values->\'\n\nIf you want to see the graph
         of the dual bolus profile configured, click on the information bolo</string>
     <string name="info_titulo">Information</string>
     <string name="tv_ractotal">Total Ration:</string>
@@ -21,7 +21,7 @@
     <string name="ntv_ractotal">0</string>
     <string name="tv_inicio">% first bolus</string>
     <string name="tv_cuadrado">% square bolus</string>
-    <string name="tv_en">en</string>
+    <string name="tv_en">at</string>
     <string name="ntv_horas">0 hours</string>
     <string name="btn_volver"><![CDATA[<-Return]]></string>
     <string name="___">--------------------------------------------------</string>
