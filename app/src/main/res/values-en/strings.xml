@@ -14,8 +14,6 @@
         want to enter a specific numeric value pres Enter values->\n\nIf you want to see the graph
         of the dual bolus profile configured, click on the information bolo</string>
     <string name="info_titulo">Information</string>
-
-
     <string name="tv_ractotal">Total Ration:</string>
     <string name="tv_bolodual">Dual bolus:</string>
     <string name="ntv_inicio">0</string>
@@ -25,7 +23,7 @@
     <string name="tv_cuadrado">% square bolus</string>
     <string name="tv_en">en</string>
     <string name="ntv_horas">0 hours</string>
-    <string name="btn_volver"><![CDATA[<-Volver]]></string>
+    <string name="btn_volver"><![CDATA[<-Return]]></string>
     <string name="___">--------------------------------------------------</string>
     <string name="tv_configuracion">Configuration:</string>
     <string name="tv_fattokcal">FatToKcal: 9</string>
