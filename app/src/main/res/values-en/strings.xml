@@ -1,11 +1,8 @@
 <resources>
     <string name="app_name">Dual Bolus</string>
-    <string name="ntv_hidratos">0.0 gr</string>
-    <string name="tv_hidratos">  Carbs</string>
-    <string name="ntv_grasas">0.0 gr</string>
-    <string name="tv_grasas">"    Fats"</string>
-    <string name="ntv_proteinas">0.0 gr</string>
-    <string name="tv_proteinas">Protein</string>
+    <string name="ntv_hidratos">0.0 gr\nCarbs</string>
+    <string name="ntv_grasas">0.0 gr\n Fats</string>
+    <string name="ntv_proteinas">0.0 gr\nProtein</string>
     <string name="tv_introvalores"><![CDATA[Enter values ->]]></string>
     <string name="btn_info" />
 
@@ -33,5 +30,15 @@
     <string name="tv_grasas2">Fats  :</string>
     <string name="tv_proteinas2">Protein :</string>
     <string name="tv_gr">gr.</string>
+    <string name="salir">Exit</string>
     <string name="tv_perfilbd">Dual bolus profile</string>
+
+
+
+    <string name="titulo_about">About</string>
+    <string name="texto_about">Dual Bolus is an App designed by the Pediatric Diabetes
+        General Hospital of Alicante, and developed by the group nBio of Miquel Hernández University of Elche.</string>
+    <string name="final_about">Dual Bolus (2016)</string>
+    <string name="acercade">About</string>
+    <string name="manual">Instructions</string>
 </resources>

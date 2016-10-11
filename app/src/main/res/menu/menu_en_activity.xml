@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/menuSalir"
+        android:title="@string/salir"
+        android:icon="@android:drawable/ic_lock_power_off"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/menuAcercaDe"
+        android:title="@string/acercade"
+        />
+    <item android:id="@+id/menumManual"
+        android:title="@string/manual"
+        />
+
+
+
+</menu>

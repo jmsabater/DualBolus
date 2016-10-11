@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/colorPrimaryDark"/>
+            <corners android:radius="@dimen/radio_boton" />
+        </shape>
+    </item>
+
+
+    <item>
+        <shape>
+            <gradient android:startColor="#FC9B62"
+                android:endColor="#DD6A12"
+                android:angle="270"/>
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+    </item>
+
+</selector>

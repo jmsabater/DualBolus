@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     >
-
-
+    <include layout="@layout/tool_bar"
+        android:id="@+id/tool_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="280dp"
+        android:layout_width="@dimen/anchoLand"
         android:layout_height="@dimen/altoLand"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:id="@+id/linearLayoutTop"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentStart="false"
@@ -39,80 +45,41 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="0.067" />
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="0dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/ntv_hidratos"
                     android:id="@+id/ntv_Hidratos"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="0.133"
-                    android:textSize="@dimen/abc_text_size_medium_material" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="@string/tv_hidratos"
-                    android:id="@+id/tv_Hidratos"
-                    android:layout_gravity="center_horizontal"
-                    android:hint="tv_HDC"
-                    android:layout_weight="0.133"/>
+                    style="@style/boton_hdc"
+                    android:layout_weight="0.133" />
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="0.067" />
-
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="0dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/ntv_grasas"
                     android:id="@+id/ntv_Grasas"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="0.133"
-                    android:textSize="@dimen/abc_text_size_medium_material" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="@string/tv_grasas"
-                    android:id="@+id/tv_Grasas"
-                    android:layout_gravity="center_horizontal"
-                    android:hint="tv_Grasas"
-                    android:layout_weight="0.133"/>
+                    android:layout_weight="0.26"
+                    style="@style/boton_grasas"/>
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="0.067" />
-
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="0dp"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/ntv_proteinas"
                     android:id="@+id/ntv_Proteinas"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="0.133"
-                    android:textSize="@dimen/abc_text_size_medium_material" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="@string/tv_proteinas"
-                    android:id="@+id/tv_Proteinas"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="0.133"/>
-
+                    android:layout_weight="0.26"
+                    style="@style/boton_proteinas" />
             </LinearLayout>
-
-
-
-
 
             <LinearLayout
                 android:orientation="vertical"
@@ -128,39 +95,32 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:weightSum="1"
-
-                    >
-
+                    android:weightSum="1">
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="1"
-                        >
-
+                        android:weightSum="1">
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            style="@style/tv_down_medium"
                             android:text="@string/tv_hidratos2"
                             android:id="@+id/tv_HDC2"
                             android:layout_weight="0.7"/>
                         <EditText
+                            style="@style/tv_down_medium"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:inputType="numberDecimal"
                             android:gravity="end"
                             android:id="@+id/et_HDC" />
                         <TextView
+                            style="@style/tv_down_medium"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
                             android:text="@string/tv_gr"
-                            android:id="@+id/tv_gr1"
-                            />
-
-
+                            android:id="@+id/tv_gr1" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -172,56 +132,47 @@
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            style="@style/tv_down_medium"
                             android:text="@string/tv_grasas2"
                             android:id="@+id/tv_Grasas2"
                             android:layout_weight="0.7"/>
-
-
-
                         <EditText
+                            style="@style/tv_down_medium"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:inputType="numberDecimal"
                             android:gravity="end"
-
                             android:id="@+id/et_Grasas" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            style="@style/tv_down_medium"
                             android:text="@string/tv_gr"
-                            android:id="@+id/tv_gr2"
-                            />
-
-
+                            android:id="@+id/tv_gr2" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="1"
-                        >
+                        android:weightSum="1">
                         <TextView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            style="@style/tv_down_medium"
                             android:text="@string/tv_proteinas2"
                             android:id="@+id/tv_Proteinas2"
                             android:layout_weight="0.7" />
-
                         <EditText
+                            style="@style/tv_down_medium"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:inputType="numberDecimal"
                             android:gravity="end"
                             android:id="@+id/et_Proteinas" />
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            style="@style/tv_down_medium"
                             android:text="@string/tv_gr"
                             android:id="@+id/tv_gr3"
                             />
@@ -233,107 +184,44 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/configuracion"
-
-
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/___"
-                        android:id="@+id/rayas"
-                        android:textColor="@color/azul"
-                        android:visibility="invisible" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/tv_configuracion"
-                        android:id="@+id/tv_Configuracion"
-                        android:textColor="@color/azul"
-                        android:visibility="invisible" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/tv_fattokcal"
-                        android:id="@+id/tv_FatToKcal"
-                        android:textColor="@color/azul"
-                        android:visibility="invisible" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/tv_proteintocal"
-                        android:id="@+id/Tv_ProteinToKcal"
-                        android:textColor="@color/azul"
-                        android:visibility="invisible" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/tv_kcaltorac"
-                        android:id="@+id/tv_KcalToRac"
-                        android:layout_alignBottom="@+id/tv_IntroValores"
-                        android:layout_alignParentStart="true"
-                        android:textColor="@color/azul"
-                        android:visibility="invisible" />
-                </LinearLayout>
+                    android:background="@drawable/configuracion" />
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>
 
-
-
     <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:text="@string/btn_info"
+        style="@style/boton_info"
         android:id="@+id/btn_Info"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayoutTop"
-        android:layout_alignParentStart="true"
-
-        android:background="@android:drawable/ic_menu_info_details"/>
+        android:nestedScrollingEnabled="true"
+         />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        style="@style/tv_down_medium"
         android:text="@string/tv_introvalores"
         android:id="@+id/tv_IntroValores"
         android:layout_below="@+id/linearLayoutTop"
         android:layout_alignParentEnd="true"
-        android:paddingRight="300dp"
+        android:paddingRight="@dimen/paddin_intValor_land"
         android:visibility="visible"
-        android:textColor="@color/azul" />
-
+        android:textColor="@color/azul"
+        android:onClick="createIntrocValorListener" />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        style="@style/tv_down_medium"
         android:text="@string/btn_volver"
         android:id="@+id/tv_Volver"
         android:layout_alignBottom="@+id/tv_IntroValores"
         android:layout_alignStart="@+id/tv_IntroValores"
-
         android:visibility="invisible"
-        android:textColor="@color/azul" />
-
-
+        android:textColor="@color/azul"
+        android:onClick="createVolverListener" />
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="250dp"
-        android:layout_height="180dp"
+        android:layout_width="@dimen/downAnchoLand"
+        android:layout_height="@dimen/downAltoLand"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
+
         android:layout_gravity="center_horizontal"
+
         android:layout_alignParentEnd="true">
 
         <FrameLayout
@@ -342,14 +230,14 @@
             android:layout_gravity="center_horizontal">
 
             <LinearLayout
-                android:layout_width="250dp"
-                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/panel_inferior"
                 android:background="@drawable/fondoinferior"
                 android:visibility="visible"
-                >
+                android:onClick="createResultadosListener">
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -362,9 +250,8 @@
                     android:layout_weight="0.5">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        style="@style/tv_down_medium"
                         android:layout_height="0dp"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/tv_ractotal"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="0.2"
@@ -377,9 +264,8 @@
                         android:layout_weight="0.4">
 
                         <TextView
+                            style="@style/tv_down_medium"
                             android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
                             android:text="@string/tv_bolodual"
                             android:id="@+id/tv_BoloDual"
                             android:layout_weight="0.6"/>
@@ -392,29 +278,26 @@
                             android:gravity="end">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                style="@style/tv_down_large_color"
                                 android:layout_height="0dp"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:text="@string/ntv_inicio"
                                 android:id="@+id/ntv_Inicio"
-                                android:textColor="#FF3F51B5"
                                 android:layout_weight="0.5"/>
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                style="@style/tv_down_large_color"
                                 android:layout_height="0dp"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:text="@string/ntv_cuadrado"
                                 android:id="@+id/ntv_Cuadrado"
                                 android:layout_weight="0.5"
-                                android:textColor="#FF3F51B5"/>
+                                />
                         </LinearLayout>
                     </LinearLayout>
 
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="0.2"></FrameLayout>
+                        android:layout_weight="0.2"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -425,29 +308,20 @@
                     android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:paddingTop="@dimen/activity_vertical_margin"
                     android:paddingBottom="@dimen/activity_vertical_margin"
-                    android:layout_weight="0.5">
-
+                    android:layout_weight="0.5"
+                    >
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        style="@style/tv_down_large_color"
                         android:text="@string/ntv_ractotal"
                         android:id="@+id/ntv_RacTotal"
-                        android:textColor="#FF3F51B5"
                         android:layout_weight="0.2"/>
-
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        style="@style/tv_down_medium"
                         android:text="@string/tv_inicio"
                         android:id="@+id/tv_Inicio"
                         android:layout_weight="0.2"/>
-
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        style="@style/tv_down_medium"
                         android:text="@string/tv_cuadrado"
                         android:id="@+id/tv_Cuadrado"
                         android:layout_weight="0.2"/>
@@ -457,23 +331,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.2">
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            style="@style/tv_down_medium"
                             android:text="@string/tv_en"
                             android:id="@+id/tv_En"
                             android:layout_weight="0.3"/>
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            style="@style/tv_down_large_color"
                             android:text="@string/ntv_horas"
                             android:id="@+id/ntv_Horas"
                             android:layout_weight="0.67"
-                            android:textColor="#FF3F51B5"/>
+                            />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -483,8 +351,9 @@
                 android:layout_height="match_parent"
                 android:id="@+id/panel_inferior_oculto"
                 android:padding="@dimen/activity_horizontal_margin"
-                android:background="@drawable/fondodualbolus_fondo_grafica"
-                android:visibility="invisible">
+                android:background="@drawable/fondo_grafica"
+                android:visibility="invisible"
+                android:onClick="createGraficaListener">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -497,4 +366,6 @@
 
         </FrameLayout>
     </LinearLayout>
-</RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="boton_hdc">
+        <item name="android:layout_width">@dimen/ancho_min_boton</item>
+        <item name="android:minWidth">@dimen/ancho_min_boton</item>
+        <item name="android:layout_height">@dimen/ancho_min_boton</item>
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:layout_margin">@dimen/margen_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:onClick">createComponentListener</item>
+        <item name="android:background">@drawable/boton_hdc</item>
+    </style>
+    <style name="boton_grasas">
+        <item name="android:layout_width">@dimen/ancho_min_boton</item>
+        <item name="android:minWidth">@dimen/ancho_min_boton</item>
+        <item name="android:layout_height">@dimen/ancho_min_boton</item>
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:layout_margin">@dimen/margen_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:onClick">createComponentListener</item>
+        <item name="android:background">@drawable/boton_grasas</item>
+    </style>
+    <style name="boton_proteinas">
+        <item name="android:layout_width">@dimen/ancho_min_boton</item>
+        <item name="android:minWidth">@dimen/ancho_min_boton</item>
+        <item name="android:layout_height">@dimen/ancho_min_boton</item>
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:layout_margin">@dimen/margen_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:onClick">createComponentListener</item>
+        <item name="android:background">@drawable/boton_proteinas</item>
+    </style>
+
+    <style name="boton_info" parent="@style/Widget.AppCompat.Button.Small">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">@string/btn_info</item>
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/linearLayoutTop</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:background">@drawable/boton_informacion</item>
+
+        <item name="android:onClick">informacion</item>
+
+    </style>
+
+    <style name="tv_down_large_color">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FF3F51B5</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+    </style>
+    <style name="tv_down_medium">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+
+    </style>
+
+
+
+
+</resources>

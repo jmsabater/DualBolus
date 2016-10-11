@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="anchoPortrait">200dp</dimen>
+    <dimen name="altoPortrait">190dp</dimen>
+    <dimen name="downAnchoPortrait">200dp</dimen>
+    <dimen name="downAltoPortrait">100dp</dimen>
+
+    <dimen name="anchoLand">180dp</dimen>
+    <dimen name="altoLand">180dp</dimen>
+    <dimen name="downAnchoLand">200dp</dimen>
+    <dimen name="downAltoLand">120dp</dimen>
+
+    <dimen name="paddin_intValor_portrait">30dp</dimen>
+    <dimen name="paddin_intValor_land">200dp</dimen>
+
+    <dimen name="texto_boton">12sp</dimen>
+    <dimen name="ancho_min_boton">60dp</dimen>
+    <dimen name="alto_min_boton">60dp</dimen>
+    <dimen name="margen_boton">6dp</dimen>
+    <dimen name="radio_boton">60dp</dimen>
+</resources>
